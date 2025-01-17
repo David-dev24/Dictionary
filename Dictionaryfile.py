@@ -5,7 +5,7 @@ from tkinter import Tk, Entry, Button, Label, StringVar
 Window = tk.Tk()
 Window.geometry("600x250")
 Window.title("Naija Dictionary")
-welcome_label = tk.Label(Window, text="Welcome to our Dictionary", padx=200, pady=50, bg= "maroon", fg="white", font="impact 16")
+welcome_label = tk.Label(Window, text="Welcome to our Dictionary", padx=200, pady=50, bg= "grey", fg="white", font="impact 16")
 welcome_label.pack()
 Window.geometry("600x600")
 
@@ -138,7 +138,7 @@ efik_dict = {
             }
 
 
-#David Adedokun 
+#David Adedokun
 def hausa(word):
     if word in hausa_dict:
         result.set(hausa_dict[word.lower()])
@@ -184,23 +184,23 @@ def efik(word):
 
 
 
-#Oladimeji Ifeoluwa 
-hausa_btn = Button(Window, bg="maroon", text="Hausa",fg="white", padx=20 ,pady=5, command=lambda: hausa(entry_text.get()))
+#Oladimeji Ifeoluwa
+hausa_btn = Button(Window, bg="grey", text="Hausa",fg="white", padx=20 ,pady=5, command=lambda: hausa(entry_text.get()))
 hausa_btn.pack()
 
-igbo_btn = Button(Window, bg="maroon",text="Igbo",fg="white", padx=20 ,pady=5,command=lambda: igbo(entry_text.get()))
+igbo_btn = Button(Window, bg="grey",text="Igbo",fg="white", padx=20 ,pady=5,command=lambda: igbo(entry_text.get()))
 igbo_btn.pack()
 
 
-yoruba_btn = Button(Window, bg="maroon", text="Yoruba",fg="white", padx=20 ,pady=5, command=lambda: yoruba(entry_text.get()))
+yoruba_btn = Button(Window, bg="grey", text="Yoruba",fg="white", padx=20 ,pady=5, command=lambda: yoruba(entry_text.get()))
 yoruba_btn.pack()
 
 
-igala_btn = Button(Window, bg="maroon" ,text="Igala",fg="white",padx=20 ,pady=5, command=lambda: igala(entry_text.get()))
+igala_btn = Button(Window, bg="grey" ,text="Igala",fg="white",padx=20 ,pady=5, command=lambda: igala(entry_text.get()))
 igala_btn.pack()
 
 
-efik_btn = Button(Window, bg="maroon" ,text="Efik",fg="white",padx=20 ,pady=5, command=lambda: efik(entry_text.get()))
+efik_btn = Button(Window, bg="grey" ,text="Efik",fg="white",padx=20 ,pady=5, command=lambda: efik(entry_text.get()))
 efik_btn.pack()
 
 
