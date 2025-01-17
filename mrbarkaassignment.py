@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import Tk, Entry, Button, Label, StringVar
 
+#Blessing Ayomide
 Window = tk.Tk()
 Window.geometry("600x250")
 Window.title("Naija Dictionary")
@@ -137,7 +138,7 @@ efik_dict = {
             }
 
 
-
+#David Adedokun 
 def hausa(word):
     if word in hausa_dict:
         result.set(hausa_dict[word.lower()])
@@ -183,7 +184,7 @@ def efik(word):
 
 
 
-
+#Oladimeji Ifeoluwa 
 hausa_btn = Button(Window, bg="maroon", text="Hausa",fg="white", padx=20 ,pady=5, command=lambda: hausa(entry_text.get()))
 hausa_btn.pack()
 
