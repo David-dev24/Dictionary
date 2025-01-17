@@ -43,7 +43,7 @@ def efik(word):
         result.set("Not found")
         print("Not found")
 
-efik_btn = Button(Window, bg="maroon" ,text="Efik",fg="white",padx=20 ,pady=5, command=lambda: efik(entry_text.get()))
+efik_btn = Button(Window, bg="grey" ,text="Efik",fg="white",padx=20 ,pady=5, command=lambda: efik(entry_text.get()))
 efik_btn.pack()
 
 
