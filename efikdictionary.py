@@ -2,9 +2,9 @@ import tkinter as tk
 from tkinter import Tk, Entry, Button, Label, StringVar
 
 Window = tk.Tk()
-Window.geometry("600x250")
+Window.geometry("600x600")
 Window.title("Efik Dictionary")
-welcome_label = tk.Label(Window, text="Welcome to my Dictionary", padx=200, pady=50, bg= "grey", fg="white", font="impact 16")
+welcome_label = tk.Label(Window, text="Welcome to my Dictionary", padx=200, pady=50, bg= "maroon", fg="white", font="impact 16")
 welcome_label.pack()
 
 title_label = tk.Label(Window, text="Please select a language")
@@ -43,7 +43,7 @@ def efik(word):
         result.set("Not found")
         print("Not found")
 
-efik_btn = Button(Window, bg="grey" ,text="Efik",fg="white",padx=20 ,pady=5, command=lambda: efik(entry_text.get()))
+efik_btn = Button(Window, bg="maroon" ,text="Efik",fg="white",padx=20 ,pady=5, command=lambda: efik(entry_text.get()))
 efik_btn.pack()
 
 
