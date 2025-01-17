@@ -22,6 +22,7 @@ result = StringVar()
 result_label = Label(Window, textvariable=result)
 result_label.pack()
 
+#Chisom Okereke
 hausa_dict = {
               "hello": "sannu",
               "thank you": "na gode",
