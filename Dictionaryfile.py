@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import Tk, Entry, Button, Label, StringVar
 
-#Blessing Ayomide
 Window = tk.Tk()
 Window.geometry("600x250")
 Window.title("Naija Dictionary")
@@ -12,6 +11,7 @@ Window.geometry("600x600")
 title_label = tk.Label(Window, text="Please select a language")
 title_label.pack(pady=10)
 
+#Blessing Ayomide
 word_label = tk.Label(Window, text="Enter a word:")
 word_label.pack()
 
