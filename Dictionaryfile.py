@@ -1,17 +1,20 @@
 import tkinter as tk
 from tkinter import Tk, Entry, Button, Label, StringVar
 
+#Oladimeji Ifeoluwa
 Window = tk.Tk()
 Window.geometry("600x250")
 Window.title("Naija Dictionary")
+
+#Chisom Okereke
 welcome_label = tk.Label(Window, text="Welcome to our Dictionary", padx=200, pady=50, bg= "grey", fg="white", font="impact 16")
 welcome_label.pack()
 Window.geometry("600x600")
 
+#Oladimeji Ifeoluwa & Chisom Okereke
 title_label = tk.Label(Window, text="Please select a language")
 title_label.pack(pady=10)
 
-#Blessing Ayomide
 word_label = tk.Label(Window, text="Enter a word:")
 word_label.pack()
 
@@ -22,7 +25,7 @@ result = StringVar()
 result_label = Label(Window, textvariable=result)
 result_label.pack()
 
-#Chisom Okereke
+#Blessing Alonge
 hausa_dict = {
               "hello": "sannu",
               "thank you": "na gode",
@@ -46,6 +49,7 @@ hausa_dict = {
               "come": "zo",
             }
 
+#Chisom Okereke
 igbo_dict = {
               "hello": "nnoo",
               "thank you": "imela",
@@ -69,6 +73,7 @@ igbo_dict = {
               "come": "bia",
            }
 
+#Oladimeji Ifeoluwa
 yoruba_dict = {
               "hello": "bawo",
               "thank you": "edupe",
@@ -92,6 +97,7 @@ yoruba_dict = {
               "come": "wa",
              }
 
+#David Adedokun
 igala_dict = {
               "hello": "agba",
               "thank you": "awa",
@@ -115,6 +121,7 @@ igala_dict = {
               "come": "lia",
              }
 
+#Adora Onwubuariri
 efik_dict = {
               "hello": "mokom",
               "thank you": "sosono",
@@ -185,7 +192,6 @@ def efik(word):
 
 
 
-#Oladimeji Ifeoluwa
 hausa_btn = Button(Window, bg="grey", text="Hausa",fg="white", padx=20 ,pady=5, command=lambda: hausa(entry_text.get()))
 hausa_btn.pack()
 
